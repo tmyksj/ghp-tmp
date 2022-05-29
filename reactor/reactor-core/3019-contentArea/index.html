@@ -842,8 +842,8 @@ p a > code:hover {
     max-width: max(80em, 60%);
     *zoom: 1;
     position: relative;
-    padding-left: 1.25em;
-    padding-right: 1.25em;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1231,9 +1231,10 @@ table.tableblock #preamble > .sectionbody > .paragraph:first-of-type p {
 }
 
 .sidebarblock {
-    padding: 1.25em;
+    padding: 1.25em 2em;
     background: #F1F1F1;
-    margin: 2em -1.25em;
+    margin: 2em -2em;
+
 }
 
 .sidebarblock > :first-child {
@@ -1261,13 +1262,6 @@ table.tableblock #preamble > .sectionbody > .paragraph:first-of-type p {
     font-size: 1.2em;
 }
 
-@media only screen and (min-width: 768px) {
-    .sidebarblock {
-        padding: 1.25em 2em;
-        margin: 2em -2em;
-    }
-}
-
 .exampleblock > .content > :last-child > :last-child, .exampleblock > .content .olist > ol > li:last-child > :last-child, .exampleblock > .content .ulist > ul > li:last-child > :last-child, .exampleblock > .content .qlist > ol > li:last-child > :last-child, .sidebarblock > .content > :last-child > :last-child, .sidebarblock > .content .olist > ol > li:last-child > :last-child, .sidebarblock > .content .ulist > ul > li:last-child > :last-child, .sidebarblock > .content .qlist > ol > li:last-child > :last-child {
     margin-bottom: 0;
 }
@@ -1286,12 +1280,13 @@ table.tableblock #preamble > .sectionbody > .paragraph:first-of-type p {
     -webkit-border-radius: 6px;
     border-radius: 6px;
     padding: 0.8em;
-    word-break: break-all;
+    word-wrap: break-word;
 }
 
 .literalblock pre.nowrap, .literalblock pre[class].nowrap, .listingblock pre.nowrap, .listingblock pre[class].nowrap {
     overflow-x: auto;
     white-space: pre;
+    word-wrap: normal;
 }
 
 .literalblock pre > code, .literalblock pre[class] > code, .listingblock pre > code, .listingblock pre[class] > code {
